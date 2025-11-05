@@ -13,8 +13,10 @@ A Python-based machine learning service for detecting malicious URLs, built with
 ## Setup Instructions
 
 1. **Clone the repository:**
-```git clone https://github.com/yourusername/malicious-url-detector.git
-cd malicious-url-detector```
+```
+git clone https://github.com/yourusername/malicious-url-detector.git
+cd malicious-url-detector
+```
 
 2. **Create and activate virtual environment:**
 ```
@@ -34,6 +36,7 @@ pip install -r requirements.txt
 python -c "from app.model import train_and_save; train_and_save('malicious_urls.csv')"
 ```
 6. **Start the API server:**
+
 ```
 uvicorn app.main:app --reload --port 8000
 ```
@@ -58,5 +61,6 @@ MIT (update as appropriate)
 ## Author
 
 Nulin Jeriba, [nulinjeriba25@gmail.com]
+
 
 
