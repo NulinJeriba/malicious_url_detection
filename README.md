@@ -10,18 +10,6 @@ A Python-based machine learning service for detecting malicious URLs, built with
 - Ready for deployment, extensible for batch processing or web frontend integration
 - Achieves high test accuracy (>97%) on benchmark datasets
 
-## Directory Structure
-project-root/
-│
-├── app/
-│ ├── init.py
-│ ├── main.py # FastAPI app entry-point
-│ ├── model.py # ML pipeline and training code
-│ ├── utils.py # Feature extraction/preprocessing functions
-├── requirements.txt
-├── .gitignore
-└── README.md
-
 ## Setup Instructions
 
 1. **Clone the repository:**
@@ -64,3 +52,4 @@ MIT (update as appropriate)
 ## Author
 
 Nulin Jeriba, [nulinjeriba25@gmail.com]
+
