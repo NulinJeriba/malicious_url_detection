@@ -47,6 +47,52 @@ uvicorn app.main:app --reload --port 8000
   ```
   curl -X POST http://127.0.0.1:8000/predict -H "Content-Type: application/json" -d '{"url":"http://example.com"}'
   ```
+## 📸 Screenshots
+
+This section showcases key stages and outputs of the Malicious URL Detection project with actual screenshots.
+
+---
+
+### Model Training Output
+
+After running the training command:
+
+python -c "from app.model import train_and_save; train_and_save('malicious_urls.csv')"
+
+text
+
+you'll see detailed logs and final metrics in your terminal, showcasing the training phase and the high model performance:
+
+![Model training and evaluation metrics](screenshots/Model-metrics.jpg)
+
+---
+
+### FastAPI Server Running
+
+Start your API server with:
+
+uvicorn app.main:app --reload --port 5500
+
+text
+
+This screenshot displays the FastAPI server running locally, ready to accept inference/POST requests for URL classification:
+
+![FastAPI server running and endpoint example](screenshots/predict-url.jpg)
+
+---
+
+### Example API Prediction via Swagger UI
+
+You can test the API on the interactive Swagger (OpenAPI) docs interface, available at [http://127.0.0.1:5500/docs](http://127.0.0.1:5500/docs):
+
+- Execute a POST request on `/predict` with a JSON body containing a URL.
+- Observe the predicted label type ("benign", "phishing", etc.) in the server response section.
+
+![Swagger UI prediction result](screenshots/result.jpg)
+
+---
+
+These screenshots demonstrate the practical completion and successful functioning of the training workflow, API serving, and live model predictions in this project.
 
 ## Notes
 
@@ -61,6 +107,7 @@ MIT (update as appropriate)
 ## Author
 
 Nulin Jeriba, [nulinjeriba25@gmail.com]
+
 
 
 
