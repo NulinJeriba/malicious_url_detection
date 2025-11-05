@@ -50,7 +50,7 @@ uvicorn app.main:app --reload --port 8000
 ## 📸 Screenshots
 
 ### 1. Model Training Output
-**File:** screenshots/Model_metrics.png
+![](screenshots/Model_metrics.png)
 
 This screenshot shows the terminal output after training the LightGBM-based malicious URL detection model.
 It includes the number of trees trained, leaf and depth info, and the final model performance metrics (Accuracy and F1-score).
@@ -58,14 +58,14 @@ It includes the number of trees trained, leaf and depth info, and the final mode
 ---
 
 ### 2. FastAPI Server Running
-**File:** screenshots/predict_url.png
+![](screenshots/predict_url.png)
 
 This screenshot demonstrates the FastAPI server running locally via Uvicorn, showing that the REST API service for malicious URL detection is up and ready to receive requests.
 
 ---
 
 ### 3. Prediction via Swagger UI
-**File:** screenshots/result.png
+![](screenshots/result.png)
 
 This screenshot captures the use of FastAPI's interactive Swagger UI. It shows submitting a POST request to the `/predict` endpoint, sending a sample URL, and receiving a real-time prediction label from the machine learning model.
 
@@ -82,6 +82,7 @@ MIT (update as appropriate)
 ## Author
 
 Nulin Jeriba, [nulinjeriba25@gmail.com]
+
 
 
 
