@@ -49,50 +49,25 @@ uvicorn app.main:app --reload --port 8000
   ```
 ## 📸 Screenshots
 
-This section showcases key stages and outputs of the Malicious URL Detection project with actual screenshots.
+### 1. Model Training Output
+**File:** screenshots/Model_metrics.png
+
+This screenshot shows the terminal output after training the LightGBM-based malicious URL detection model.
+It includes the number of trees trained, leaf and depth info, and the final model performance metrics (Accuracy and F1-score).
 
 ---
 
-### Model Training Output
+### 2. FastAPI Server Running
+**File:** screenshots/predict_url.png
 
-After running the training command:
-
-python -c "from app.model import train_and_save; train_and_save('malicious_urls.csv')"
-
-text
-
-you'll see detailed logs and final metrics in your terminal, showcasing the training phase and the high model performance:
-
-![Model training and evaluation metrics](screenshots/Model-metrics.jpg)
+This screenshot demonstrates the FastAPI server running locally via Uvicorn, showing that the REST API service for malicious URL detection is up and ready to receive requests.
 
 ---
 
-### FastAPI Server Running
+### 3. Prediction via Swagger UI
+**File:** screenshots/result.png
 
-Start your API server with:
-
-uvicorn app.main:app --reload --port 5500
-
-text
-
-This screenshot displays the FastAPI server running locally, ready to accept inference/POST requests for URL classification:
-
-![FastAPI server running and endpoint example](screenshots/predict-url.jpg)
-
----
-
-### Example API Prediction via Swagger UI
-
-You can test the API on the interactive Swagger (OpenAPI) docs interface, available at [http://127.0.0.1:5500/docs](http://127.0.0.1:5500/docs):
-
-- Execute a POST request on `/predict` with a JSON body containing a URL.
-- Observe the predicted label type ("benign", "phishing", etc.) in the server response section.
-
-![Swagger UI prediction result](screenshots/result.jpg)
-
----
-
-These screenshots demonstrate the practical completion and successful functioning of the training workflow, API serving, and live model predictions in this project.
+This screenshot captures the use of FastAPI's interactive Swagger UI. It shows submitting a POST request to the `/predict` endpoint, sending a sample URL, and receiving a real-time prediction label from the machine learning model.
 
 ## Notes
 
@@ -107,6 +82,7 @@ MIT (update as appropriate)
 ## Author
 
 Nulin Jeriba, [nulinjeriba25@gmail.com]
+
 
 
 
